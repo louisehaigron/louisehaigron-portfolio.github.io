@@ -105,6 +105,13 @@ h6 {
     }
 }
 
+@media (min-width: 991px) {
+    #main {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
@@ -1068,6 +1075,7 @@ section {
     margin-bottom: 50px;
 }
 
+
 .contact .info i {
     font-size: 20px;
     color: #D29EE1;
@@ -1100,7 +1108,20 @@ section {
 .address, .email, .phone {
     margin-left: 20px;
     margin-right: 20px;
-    width: 300px;
+    width: 260px;
+}
+
+@media (max-width: 991px) {
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .address, .email, .phone {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
 }
 
 .contact .info .email:hover i,
